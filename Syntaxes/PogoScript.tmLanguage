@@ -28,6 +28,18 @@
 		</dict>
 		<dict>
 			<key>match</key>
+			<string>\btrue\b</string>
+			<key>name</key>
+			<string>constant.language.boolean.true.pogoscript</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\bfalse\b</string>
+			<key>name</key>
+			<string>constant.language.boolean.false.pogoscript</string>
+		</dict>
+		<dict>
+			<key>match</key>
 			<string>//[^\n]*</string>
 			<key>name</key>
 			<string>comment.line.double-slash.pogoscript</string>
@@ -42,7 +54,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>=&gt;|[.:?!;,=]|self</string>
+			<string>=&gt;|&lt;|[.:?!;,=\>]|self|try|catch|else|if|@return|return|@new|new</string>
 			<key>name</key>
 			<string>keyword</string>
 		</dict>
